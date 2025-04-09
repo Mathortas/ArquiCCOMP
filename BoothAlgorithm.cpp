@@ -2,7 +2,7 @@
 #include <cstdint> // Para trabajar diferentes tamaños de bits y no el del compilador (Usamos estos porque habria irregularidades en los numeros)
 
 int32_t booth_multiply(int16_t numero1, int16_t numero2) {
-    int16_t A = 0;          // Acumulador (inicializado a 0)
+    int16_t A = 0;          // Auxiliar (inicializado a 0)
     int16_t Q = numero2; 
     int16_t M = numero1; 
     int Q_prev = 0;        // Bit anterior de Q (para las transiciones)
