@@ -39,6 +39,9 @@ int32_t booth_multiply(int16_t numero1, int16_t numero2) {
     return (static_cast<int32_t>(A) << 16) | static_cast<uint16_t>(Q);
 }
 
+/** El algoritmo funciona para diferentes tamaños de bits, se tendria que alterar los parametros de la funcion; los desplazamientos de bits en la linea 32 y el casteo de resultado en la linea 39
+**/
+
 int main() {
     int16_t a = -223;
     int16_t b = 69; 
